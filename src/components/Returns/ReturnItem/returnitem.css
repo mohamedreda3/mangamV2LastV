@@ -1,0 +1,143 @@
+.returnitem {
+  padding: 20px 8px 2px;
+  background-color: #F5F8FF;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.returnitem .top {
+  display: flex;
+  /* align-items: center; */
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* .returnitem .top>div:last-of-type>* {
+  height: 15px;
+  max-height: fit-content;
+} */
+
+.returnitem .top>div:last-of-type h4 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19.2px;
+  margin-bottom: 10px;
+}
+
+.returnitem .top>div:last-of-type p:first-of-type {
+  font-weight: 700;
+  font-size: 18px;
+  color: #312783;
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 10px;
+
+}
+
+.returnitem .top>div:last-of-type p:nth-of-type(2) {
+  font-size: 13px;
+  font-weight: 400;
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 10px;
+}
+
+.returnitem .top>div:last-of-type p:nth-of-type(2) span {
+  color: #666;
+  margin-left: 5px;
+}
+
+.returnitem .top>div:last-of-type button {
+  background-color: #312783;
+  color: white;
+  border: none;
+  padding: 7px 10px;
+  border-radius: 10px;
+  font-size: 10px;
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+.returnitem .top .img {
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  height: fit-content;
+}
+
+.returnitem .top .img img {
+  width: 100px;
+}
+
+.returnitem .bottom {
+  padding: 10px 0px;
+}
+
+.returnitem .bottom h4 {
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: capitalize;
+  margin: 0px;
+}
+
+.returnitem .bottom p:first-of-type {
+  color: #666;
+  font-style: 12px;
+  font-weight: 400;
+  height: fit-content;
+  padding: 0px;
+  margin: 4px 0px;
+  margin-top: -4px;
+  text-align: left;
+}
+
+.returnitem .bottom p.approved {
+  color: #29C303;
+  background-color: #A5EE92;
+  width: fit-content;
+  padding: 4px 10px;
+  border-radius: 10px;
+  text-transform: capitalize;
+}
+
+.returnitem .bottom p.rejected {
+  color: #B90000;
+  background-color: #FCBFBF;
+  width: fit-content;
+  padding: 4px 10px;
+  border-radius: 10px;
+  text-transform: capitalize;
+}
+
+.bottom .pending {
+  background-color: rgba(243, 243, 2, 0.721);
+  width: fit-content;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.bottom .rejected {
+  background-color: #E0A09D;
+  color: #CD0F0F;
+}
+
+.returnitem hr {
+  background-color: #666;
+  height: 1px;
+  margin-top: 4px;
+  margin-top: 10px !important;
+}
+
+.returnitem .bottom >* {
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: capitalize;
+  margin: 0px;
+  font-family: 'FLTR' !important;
+  text-align: start;
+}
+
+.product_log .left div>.img, .product_log>div>div>img {
+  height: 82px;
+}

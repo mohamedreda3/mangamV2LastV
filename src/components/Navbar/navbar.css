@@ -1,0 +1,105 @@
+.navbar {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  left: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: white;
+  box-shadow: 0px 0 26px rgb(196 196 196 / 77%) ;
+  padding: 5px;
+  border-radius: 20px 20px 0px 0px;
+  background-color: white;
+  z-index: 999;
+  font-size: 15px;
+}
+
+.navbar a {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-direction: column;
+  text-decoration: none;
+  color: black;
+
+}
+
+.navbar a svg, .navbar a.active path {
+  color: #828282 !important;
+  stroke: #828282 !important;
+  /* fill: #828282 !important; */
+}
+
+.navbar a.active svg, .navbar a.active path {
+  color: white !important;
+  stroke: white !important;
+  /* fill: white !important; */
+}
+
+
+.navbar>a h6 {
+  font-size: 11px !important;
+}
+
+.navbar>a>svg {
+  font-size: 25px;
+  cursor: pointer;
+  /* width: 60px;
+  height: 60px; */
+  border-radius: 50%;
+}
+
+.navbar>a>div {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.navbar>a.active>div {
+  background-color: #312783;
+  color: white;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.navbar>a.active>div {
+  color: white;
+}
+
+.navbar>a img {
+  width: 18px;
+  cursor: pointer;
+  margin: auto;
+}
+
+a:active,
+a:focus,
+a:hover {
+  text-decoration: none !important;
+}
+
+.notification_now span {
+  position: absolute;
+  top: 10px;
+  left: 3px;
+  width: 10px;
+  height: 10px;
+  background: orange;
+  border-radius: 10px;
+}
+
+.notification_now {
+  position: relative;
+}

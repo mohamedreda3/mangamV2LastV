@@ -1,0 +1,67 @@
+body {
+  /* margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+@font-face {
+  font-family: FLT;
+  src: url("./assets/font/Frutiger LT Arabic 45 Light.ttf");
+}
+
+@font-face {
+  font-family: FLTB;
+  src: url("./assets/font/Frutiger\ LT\ Std\ 65\ Bold.otf");
+}
+
+@font-face {
+  font-family: FLTR;
+  src: url("./assets/font/Frutiger\ LT\ Std\ 55\ Roman.otf");
+}
+
+@font-face {
+  font-family: FLTBL;
+  src: url("./assets/font/Frutiger\ LT\ Std\ 75\ Black.otf");
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  -moz-user-select: none;
+  /* firefox */
+  -webkit-user-select: none;
+  /* Safari */
+  -ms-user-select: none;
+  /* IE*/
+  user-select: none;
+  /* Standard syntax */
+  font-family: FLT, "sans-serif";
+}
+
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: var(--swiper-pagination-bottom, -32px) !important;
+}
+
+
+iframe {
+  width: 360px;
+  min-height: 90vh;
+}
+
+.app.rtl>div.productdetails_page>div.buy_div>div.buy>button {
+  margin-right: auto !important;
+  margin-left: 0 !important;
+}

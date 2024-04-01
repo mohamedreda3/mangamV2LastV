@@ -1,0 +1,11 @@
+.return_page {
+  /* padding: 15px; */
+  margin-bottom: 50px;
+  /* padding: 4px !important; */
+  padding-bottom: 4px;
+  padding: 20px 4px 2px;
+}
+
+.return_page .returns {
+  margin-top: 20px;
+}

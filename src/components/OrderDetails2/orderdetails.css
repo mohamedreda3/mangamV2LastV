@@ -1,0 +1,34 @@
+.orderdetailspage {
+  padding: 20px;
+}
+
+.orderdetailspage .orderdetails_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.orderdetailspage>hr {
+  margin: .1rem;
+}
+
+.orderdetailspage .orderdet {
+  margin-top: 20px;
+}
+
+.orderdetailspage .orderdet>div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.orderdetailspage .orderdet>div>h5 {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.orderdetailspage .orderdet>div>p {
+  font-size: 14px;
+  font-weight: 400;
+}

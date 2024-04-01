@@ -1,0 +1,213 @@
+.profilepage {
+  padding: 20px 20px;
+}
+
+.profilepage .profile_myinfo {
+  width: 100%;
+  height: 236px;
+  margin: auto;
+  background-color: #F5F8FF;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+
+
+}
+
+.profile_myinfo>* {
+  margin: 0px;
+}
+
+.profile_myinfo h5 {
+  font-weight: 700;
+  font-size: 18px;
+  margin-top: 10px;
+  color: #152248 !important;
+}
+
+.profile_myinfo h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #152248 !important;
+}
+
+.profile_myinfo h4 img{
+  width: 22px;
+  height: 22px;
+  margin-right: 6px;
+
+}
+
+.profile_myinfo>button {
+  margin-top: 10px;
+  background-color: #FE8D2A;
+  color: white;
+  height: 40px;
+  padding: 13px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border: none;
+  font-size: 12px;
+  font-weight: 700;
+  font-family: 'FLTR';
+}
+
+.profilepage .policy {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #F5F8FF;
+  padding: 15px 10px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+
+#root > div > div.productdetails_page > div.buy_div > div.buy > button {
+  margin-left: auto;
+  padding: 12px 32px;
+}
+
+.profilepage .policy>* {
+  margin: 0px;
+  font-weight: 500;
+  font-size: 17px;
+  color: #000;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  font-family: 'FLTB';
+  stroke-width: 1;
+}
+
+.socials_title {
+  text-align: center;
+  margin-top: 30px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between
+}
+
+.socials_title>span:nth-child(2) {
+  font-size: 14px;
+  font-weight: 700;
+  color: #152248;
+}
+
+.socials_title>span:nth-child(1),
+.socials_title>span:nth-child(3) {
+  width: 25%;
+  height: 2px;
+  background-color: #CDCED1;
+  border-radius: 333px;
+  display: block;
+}
+
+.socials_div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 24px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.socials_div .social_div {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.social_div img {
+  width: 40px;
+}
+
+.terms_big_div {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.279);
+  z-index: 999999999999999999999;
+}
+
+.terms_small_div {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 300px;
+  background-color: white;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 25px;
+  min-height: 200px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.terms_small_div>svg {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  font-size: 22px;
+  color: rgb(193, 5, 5);
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  padding: 5px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ec2a2a52;
+  border-radius: 50%;
+  z-index: 999;
+  box-shadow: 0 0 4px rgb(154 154 154);
+}
+
+/* .terms_small_div>span {
+  width: 5px;
+  height: 40px;
+  background-color: white;
+  display: block;
+  position: absolute;
+  top: -40px;
+  right: 20px;
+} */
+
+.terms_small_div p{
+  font-size: 20x;
+  color: #152248 !important;
+  font-weight: bolder;
+
+}
+
+
+.profile_myinfo .image{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile_myinfo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

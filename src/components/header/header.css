@@ -1,0 +1,102 @@
+.header {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 0px;
+  padding: 10px 20px;
+  margin-top: 30px;
+}
+
+.header .person_details {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.person_details_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  /* gap: 10px; */
+}
+
+.person_details_text > * {
+  margin: 0px;
+  font-weight: 900;
+  color: #152248 !important;
+}
+
+.person_details img {
+  width: 40px;
+  border-radius: 50px;
+  height: 40px;
+}
+.person_details h5 {
+  font-weight: 900;
+  font-size: 16px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+}
+
+.person_details_text h4 {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+/* nav {
+  width: 100%;
+  height: 82px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+  flex-shrink: 0;
+  border-radius: 20px 20px 0px 0px;
+  background: #fff;
+  box-shadow: 0px -6px 20px 0px rgba(0, 0, 0, 0.06);
+  z-index: 9999;
+}
+nav a svg {
+  fill: black;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+}
+nav a.active svg {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  background: #312783;
+  fill: white;
+} */
+
+.rb {
+  display: flex;
+  width: 98px;
+  height: 24px;
+  padding: 13px 32px 12px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: #FE8D2A;
+  color: var(#ffffff, #fff) !important;
+  text-align: center !important;
+  font-size: 10px !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  line-height: normal !important;
+}

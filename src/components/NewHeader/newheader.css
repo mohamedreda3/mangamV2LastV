@@ -1,0 +1,22 @@
+.new_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.new_header>div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+
+.new_header>div>* {
+  margin: 0px;
+}
+
+.new_header>div h4 {
+  font-size: 15px;
+  font-weight: 700;
+}

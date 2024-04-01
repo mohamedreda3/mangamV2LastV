@@ -1,0 +1,28 @@
+.countDown{
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+
+.countDown h1{
+  padding: 10px;
+  font-size: 10px;
+  border-radius: 3px;
+  background-color: #f38c25;
+  line-height: normal;
+  color: #FFF !important;
+  letter-spacing: 1px;
+}
+
+.countDown span{
+  font-size: 10px;
+  font-weight: bolder;
+  font-size: 25px;
+  margin: 0 5px;
+  line-height: normal;
+
+  color: #f38c25;
+}
