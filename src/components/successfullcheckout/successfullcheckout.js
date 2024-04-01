@@ -35,7 +35,7 @@ function Successfullcheckout() {
     let config = {
       method: "get",
       maxBodyLength: Infinity,
-      url: "http://localhost:9999/v2/product/getAll?type=admin",
+      url: "https://api.manjam.shop/v2/product/getAll?type=admin",
       headers: {
         apiKey:
           "llfPTSlGKSFkS3e61XBH3SZaPOaQoDIhsq1xH9CAEEHG3MOU2D8B57umjk6xgfIA",
@@ -59,7 +59,7 @@ function Successfullcheckout() {
           let config = {
             method: "post",
             maxBodyLength: Infinity,
-            url: "http://localhost:9999/v2/order/changeStatus",
+            url: "https://api.manjam.shop/v2/order/changeStatus",
             headers: {
               "Content-Type": "application/json",
             },
@@ -75,7 +75,7 @@ function Successfullcheckout() {
               console.log(error);
             });
           axios
-            .post("http://localhost:9999/v2/order/orderPayUpdating", {
+            .post("https://api.manjam.shop/v2/order/orderPayUpdating", {
               id: token?.order_id,
               payementId: 1525267181,
             })
@@ -97,7 +97,7 @@ function Successfullcheckout() {
           let config = {
             method: "post",
             maxBodyLength: Infinity,
-            url: "http://localhost:9999/v2/order/changeStatus",
+            url: "https://api.manjam.shop/v2/order/changeStatus",
             headers: {
               "Content-Type": "application/json",
             },
@@ -113,7 +113,7 @@ function Successfullcheckout() {
               console.log(error);
             });
           axios
-            .post("http://localhost:9999/v2/order/orderPayUpdating", {
+            .post("https://api.manjam.shop/v2/order/orderPayUpdating", {
               id: token?.order_id,
               payementId: 1525267181,
             })
@@ -132,7 +132,7 @@ function Successfullcheckout() {
           let config = {
             method: "post",
             maxBodyLength: Infinity,
-            url: "http://localhost:9999/v2/order/changeStatus",
+            url: "https://api.manjam.shop/v2/order/changeStatus",
             headers: {
               "Content-Type": "application/json",
             },
@@ -148,7 +148,7 @@ function Successfullcheckout() {
               console.log(error);
             });
           axios
-            .post("http://localhost:9999/v2/order/orderPayUpdating", {
+            .post("https://api.manjam.shop/v2/order/orderPayUpdating", {
               id: token?.order_id,
               payementId: 1525267181,
             })

@@ -19,7 +19,7 @@ const Profile = () => {
   const [showprivacy, setshowprivacy] = useState(false);
   const getScoails = () => {
     axios
-      .post("http://localhost:9999/v2/site/social_media/getAll?type=user", {
+      .post("https://api.manjam.shop/v2/site/social_media/getAll?type=user", {
         timeout: 8989898989,
       })
       .then((res) => {
@@ -31,7 +31,7 @@ const Profile = () => {
 
   const getsitedata = () => {
     axios
-      .get("http://localhost:9999/v2/site/info/getAll", {
+      .get("https://api.manjam.shop/v2/site/info/getAll", {
         timeout: 8989898989,
       })
       .then((res) => {
@@ -115,14 +115,13 @@ const Profile = () => {
           onClick={() => {
             const sentToken = base64.encode(
               JSON.stringify({
-                is_select: true,
                 app_id: "16",
                 meta_data: "",
-                callback_base_url: "https://maangam.camp-coding.tech",
+                callback_base_url: "https://manjam.shop",
               })
             );
             window.location.href =
-              "https://mangamdeeplink.camp-coding.tech/Charge?data=" +
+              "likecard://like4card.page.link/ChargeBalance/Charge?data=" +
               sentToken;
           }}
         >

@@ -166,13 +166,13 @@ function Checkout() {
     // console.log(data_send);
     setUseLoading(true);
     await axios
-      .post("http://localhost:9999/v2/offers/buy", data_send)
+      .post("https://api.manjam.shop/v2/offers/buy", data_send)
       .then(async (res) => {
         // console.log(res.data)
         if (res.data.status) {
           if (res?.data?.orderId) {
             const orderData = await axios.get(
-              `http://localhost:9999/v2/order/order_details?user_id=${userData?.userId}&order_id=${res?.data?.orderId}`,
+              `https://api.manjam.shop/v2/order/order_details?user_id=${userData?.userId}&order_id=${res?.data?.orderId}`,
               { timeout: 8989898989 }
             );
             const order_data = orderData?.data?.message[0];
@@ -185,7 +185,7 @@ function Checkout() {
               order_id: order_data?.id,
               meta_data: "",
               callback_base_url:
-                "http://localhost:3000/payment_callback?token=flaskdsakdpoaskdoaspdkop&app_order_ref=1232",
+                "https://manjam.shop/payment_callback?token=flaskdsakdpoaskdoaspdkop&app_order_ref=1232",
               iso_currency: userData?.currency,
               products: [
                 {
@@ -218,7 +218,7 @@ function Checkout() {
             );
             const linkSendData = base64EncodedString;
             window.location.href =
-              "https://like4card.page.link/payment?data=" + linkSendData;
+              "likecard://like4card.page.link/payment?data=" + linkSendData;
           }
           // toast.success(res.data.message);
         } else if (res.data.status == 0) {
@@ -459,11 +459,11 @@ function Checkout() {
                 app_id: "16",
                 meta_data: "",
                 callback_base_url:
-                  "http://localhost:3000/checkout?type=addresses_callback",
+                  "https://manjam.shop/checkout?type=addresses_callback",
               })
             );
             window.location.href =
-              "https://like4card.page.link/payment?data=" + sentToken;
+              "likecard://like4card.page.link/addresses?data=" + sentToken;
           }}
         >
           {" "}

@@ -85,7 +85,7 @@ const ProductDetails = () => {
   const joinRoom = async (coins, roomId) => {
     setJoinLoading(true);
     await axios
-      .post("http://localhost:9999/v2/rooms/join", {
+      .post("https://api.manjam.shop/v2/rooms/join", {
         user_id: userData?.userId,
         user_image: userData?.userPicture,
         user_name: userData?.username,
@@ -102,7 +102,7 @@ const ProductDetails = () => {
           );
           setOfferLoading(true);
           axios
-            .post("http://localhost:9999/v2/rooms/Select_Offer_Rooms", {
+            .post("https://api.manjam.shop/v2/rooms/Select_Offer_Rooms", {
               offer_id: offer_id?.get("offer_id"),
               type: "user",
             })
@@ -128,7 +128,7 @@ const ProductDetails = () => {
 
   const getshippingcompany = () => {
     axios
-      .post("http://localhost:9999/v2/shipping/getAll", {
+      .post("https://api.manjam.shop/v2/shipping/getAll", {
         timeout: 8989898989,
       })
       .then((res) => {
@@ -220,7 +220,7 @@ const ProductDetails = () => {
   useEffect(() => {
     setOfferLoading(true);
     axios
-      .post("http://localhost:9999/v2/rooms/Select_Offer_Rooms", {
+      .post("https://api.manjam.shop/v2/rooms/Select_Offer_Rooms", {
         offer_id: offer_id?.get("offer_id"),
         type: "user",
       })
@@ -240,7 +240,7 @@ const ProductDetails = () => {
     if (shippingdata?.shippingTitle) {
       setBuyLoading(true);
       axios
-        .post("http://localhost:9999/v2/offers/updateOfferHold", {
+        .post("https://api.manjam.shop/v2/offers/updateOfferHold", {
           offer_id: offerData?.id,
           hold: 1,
         })
@@ -388,7 +388,7 @@ const ProductDetails = () => {
           channel.bind("NewJoiner", async function (data) {
             // console.log(data);
             axios
-              .post("http://localhost:9999/v2/rooms/Select_Offer_Rooms", {
+              .post("https://api.manjam.shop/v2/rooms/Select_Offer_Rooms", {
                 offer_id: offer_id?.get("offer_id"),
                 type: "user",
               })
@@ -407,7 +407,7 @@ const ProductDetails = () => {
           channel.bind("priceReduced", async function (data) {
             // console.log(data);
             axios
-              .post("http://localhost:9999/v2/rooms/Select_Offer_Rooms", {
+              .post("https://api.manjam.shop/v2/rooms/Select_Offer_Rooms", {
                 offer_id: offer_id?.get("offer_id"),
                 type: "user",
               })

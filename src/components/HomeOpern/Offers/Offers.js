@@ -7,7 +7,7 @@ const Offers = () => {
   const [offers, setoffers] = useState(false);
   const getCategories = async () => {
     const cats = await axios.get(
-      "http://localhost:9999/v2/product/getAll?type=user"
+      "https://api.manjam.shop/v2/product/getAll?type=user"
     );
     setoffers(cats.data);
   };

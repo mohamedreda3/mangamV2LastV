@@ -10,7 +10,7 @@ const Home = () => {
   const [sitedata, setsitedata] = useState({});
   const getsitedata = () => {
     axios
-      .get("http://localhost:9999/v2/site/info/getAll")
+      .get("https://api.manjam.shop/v2/site/info/getAll")
       .then((res) => {
         // console.log(res.data?.message);
         setsitedata(res?.data?.message[0]);

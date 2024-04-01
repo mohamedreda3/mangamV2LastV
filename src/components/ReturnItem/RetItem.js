@@ -23,7 +23,7 @@ const RetItem = () => {
 
   const getReasons = () => {
     axios
-      .get("http://localhost:9999/v2/reason/getAll")
+      .get("https://api.manjam.shop/v2/reason/getAll")
       .then((res) => {
         setReasons(res.data.message);
       })
@@ -78,7 +78,7 @@ const RetItem = () => {
     };
     console.log(data_send);
     axios
-      .post("http://localhost:9999/v2/return/orderReturn", data_send)
+      .post("https://api.manjam.shop/v2/return/orderReturn", data_send)
       .then((res) => {
         if (res.data.status == 1) {
           toast.success(

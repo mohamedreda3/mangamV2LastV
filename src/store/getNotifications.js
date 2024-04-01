@@ -10,7 +10,7 @@ const initialState = {
 
 export const getNotifications = createAsyncThunk("get/Notifies", async () => {
   const getNotification = await axios.post(
-    "http://localhost:9999/v2/order/notification",
+    "https://api.manjam.shop/v2/order/notification",
     { user_id: JSON.parse(localStorage.getItem("manjamUser"))?.userId },
     { timeout: 8989898989 }
   );

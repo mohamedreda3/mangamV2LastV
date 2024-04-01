@@ -31,7 +31,7 @@ const OrderLogs2 = () => {
   const getorderProducts = () => {
     axios
       .post(
-        "http://localhost:9999/v2/order/getAll?user_id=" + userData?.userId,
+        "https://api.manjam.shop/v2/order/getAll?user_id=" + userData?.userId,
         {
           timeout: 89999990999999,
         }
@@ -84,7 +84,7 @@ const OrderLogs2 = () => {
       user_id: userData?.userId,
     };
     axios
-      .post("http://localhost:9999/v2/return/getReturns", data_send, {
+      .post("https://api.manjam.shop/v2/return/getReturns", data_send, {
         timeout: 89999990999999,
       })
       .then((res) => {

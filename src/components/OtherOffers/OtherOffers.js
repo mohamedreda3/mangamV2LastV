@@ -33,7 +33,7 @@ const OtherOffers = () => {
   const joinRoom = (coins, roomId, offer_id) => {
     setJoinLoading(true);
     axios
-      .post("http://localhost:9999/v2/rooms/join", {
+      .post("https://api.manjam.shop/v2/rooms/join", {
         user_id: userData?.userId,
         user_image: userData?.userPicture,
         user_name: userData?.username,
@@ -117,7 +117,7 @@ const OtherOffers = () => {
       offer_id: id,
     };
     axios
-      .post("http://localhost:9999/v2/offers/notifyMe", data_send)
+      .post("https://api.manjam.shop/v2/offers/notifyMe", data_send)
       .then((res) => {
         toast.success(
           language == "ar" ? "شكرا, سوف نخبرك" : "Thanks, We will notify you.!"
@@ -135,7 +135,7 @@ const OtherOffers = () => {
       type: "user",
     };
     axios
-      .post("http://localhost:9999/v2/offers/select_offers", data_send, {
+      .post("https://api.manjam.shop/v2/offers/select_offers", data_send, {
         timeout: 8989898989,
       })
       .then((res) => {

@@ -24,7 +24,7 @@ const ProdDetails = () => {
 
   const getRoom = async () => {
     await axios
-      .post("http://localhost:9999/v2/rooms/Select_Offer_Rooms", {
+      .post("https://api.manjam.shop/v2/rooms/Select_Offer_Rooms", {
         offer_id: id,
         type: "user",
       })

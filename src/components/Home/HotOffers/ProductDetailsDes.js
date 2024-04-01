@@ -112,7 +112,7 @@ const ProductDetailsDes = () => {
     setselectedproduct(productdata.products[0]?.colors[0]);
     setTargetColor(productdata.products[0]);
 
-    // axios.get(`http://localhost:9999/v2/product/getProduct?id=${location?.state?.id}`)
+    // axios.get(`https://api.manjam.shop/v2/product/getProduct?id=${location?.state?.id}`)
     // .then((res)=>{
     //   console.log(res.data.message[0])
     //   if(Array.isArray(res.data.message)){
@@ -143,7 +143,7 @@ const ProductDetailsDes = () => {
 
   const getshippingcompany = () => {
     axios
-      .post("http://localhost:9999/v2/shipping/getAll", {
+      .post("https://api.manjam.shop/v2/shipping/getAll", {
         timeout: 8989898989,
       })
       .then((res) => {

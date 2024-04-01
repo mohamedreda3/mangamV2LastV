@@ -42,7 +42,7 @@ const OrderLogs = () => {
     };
     // console.log(data_send);
     axios
-      .post("http://localhost:9999/v2/product/rate", data_send)
+      .post("https://api.manjam.shop/v2/product/rate", data_send)
       .then((res) => {
         // console.log(res);
         if (res.data.status == 1) {

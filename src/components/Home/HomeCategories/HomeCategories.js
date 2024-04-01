@@ -10,7 +10,7 @@ const HomeCategories = () => {
   const [categories, setcategories] = useState();
   const getCategories = async () => {
     const cats = await axios
-      .get("http://localhost:9999/v2/category/getAll?type=user", {
+      .get("https://api.manjam.shop/v2/category/getAll?type=user", {
         timeout: 8989898989,
       })
       .catch((err) => console.log(err));

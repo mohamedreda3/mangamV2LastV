@@ -52,7 +52,7 @@ const HomeHeader = () => {
   const [sitedata, setsitedata] = useState({});
   const getsitedata = () => {
     axios
-      .get("http://localhost:9999/v2/site/info/getAll", {
+      .get("https://api.manjam.shop/v2/site/info/getAll", {
         timeout: 8989898989,
       })
       .then((res) => {

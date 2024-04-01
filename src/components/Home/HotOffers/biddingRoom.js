@@ -36,7 +36,7 @@ const BiddingRoom = () => {
 
   const getRoom = async () => {
     await axios
-      .post("http://localhost:9999/v2/rooms/Select_Offer_Rooms", {
+      .post("https://api.manjam.shop/v2/rooms/Select_Offer_Rooms", {
         offer_id: location?.state?.offer_id,
         type: "user",
       })
@@ -61,7 +61,7 @@ const BiddingRoom = () => {
     console.log(offers[0]);
     setJoinLoading(true);
     axios
-      .post("http://localhost:9999/v2/rooms/join_queue", {
+      .post("https://api.manjam.shop/v2/rooms/join_queue", {
         user_id: userData?.userId,
         user_image: userData?.userPicture,
         user_name: userData?.username,

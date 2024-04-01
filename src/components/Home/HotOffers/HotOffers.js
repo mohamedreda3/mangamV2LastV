@@ -58,7 +58,7 @@ const HotOffers = () => {
       user_id: userData?.userId,
     };
     await axios
-      .post("http://localhost:9999/v2/offers/select_offers", data_send)
+      .post("https://api.manjam.shop/v2/offers/select_offers", data_send)
 
       .then((res) => {
         // console.log(res.data.message);
@@ -136,7 +136,7 @@ const HotOffers = () => {
   const joinRoom = (coins, roomId, offer_id) => {
     setJoinLoading(true);
     axios
-      .post("http://localhost:9999/v2/rooms/join", {
+      .post("https://api.manjam.shop/v2/rooms/join", {
         user_id: userData?.userId,
         user_image: userData?.userPicture,
         user_name: userData?.username,

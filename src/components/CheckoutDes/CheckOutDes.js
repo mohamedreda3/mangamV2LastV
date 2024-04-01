@@ -62,7 +62,7 @@ function CheckoutOutDes() {
     };
     // console.log(data_send);
     axios
-      .post("http://localhost:9999/v2/offers/buy", data_send)
+      .post("https://api.manjam.shop/v2/offers/buy", data_send)
       .then((res) => {
         // console.log(res.data)
         if (res.data.status == 1) {

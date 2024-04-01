@@ -48,7 +48,7 @@ const Slider = () => {
 
   const HomeBanner = () => {
     axios
-      .get("http://localhost:9999/v2/banner/getAll?type=user", {
+      .get("https://api.manjam.shop/v2/banner/getAll?type=user", {
         timeout: 500000,
       })
       .then((res) => {

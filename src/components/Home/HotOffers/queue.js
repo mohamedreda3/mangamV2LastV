@@ -36,7 +36,7 @@ const Queue = () => {
 
   const getRoom = async () => {
     await axios
-      .post("http://localhost:9999/v2/rooms/Select_Offer_Rooms", {
+      .post("https://api.manjam.shop/v2/rooms/Select_Offer_Rooms", {
         offer_id: location?.state?.offer_id,
         type: "user",
       })
@@ -366,7 +366,7 @@ const Queue = () => {
                     renderer={renderer}
                     onComplete={() => {
                       axios.post(
-                        "http://localhost:9999/v2/rooms/changeUserQueueStatus",
+                        "https://api.manjam.shop/v2/rooms/changeUserQueueStatus",
                         {
                           user_id: userData?.userId,
                           order_no: -1,
